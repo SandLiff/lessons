@@ -1,0 +1,81 @@
+/* Reset */
+
+@import url("reset.css");
+
+/* Selectors */
+
+[class*="__text"]{
+	color: green;
+}
+
+/* Code */
+
+.title {
+	color: red;
+}
+
+.content {}
+
+.quote {}
+
+.citation {
+	color: blue;
+}
+
+.citation + .author {
+	color: green;
+}
+
+.author {}
+
+.about {}
+
+.label {
+	color: orange;
+}
+
+.text {
+	color: yellow;
+}
+
+.list {}
+
+.list .item {
+	color: green;
+}
+
+.item {}
+
+.features {}
+
+.features > p {
+	color: purple;
+}
+
+.more {}
+
+.problems {}
+
+.end {}
+
+.source {
+	color: red;
+}
+
+#authors {
+	color: green;
+}
+
+.content-end {}
+
+.end-text {}
+
+.end-text ~ p {
+	color: yellow;
+}
+
+.first__text {}
+
+.second__text {}
+
+.third__text {}
