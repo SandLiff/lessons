@@ -1,0 +1,57 @@
+/*       */
+/* Reset */
+/*       */
+@import url("reset.css");
+
+/*       */
+/* Fonts */
+/*       */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap");
+
+/*       */
+/* Code */
+/*       */
+
+/* Settings */
+
+body {
+	font-family: "Poppins", "Arial", sans-serif;
+	color: #6C757D;
+	font-size: 14px;
+	line-height: 1.78;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+/* Styles */
+
+.main {}
+
+.container {}
+
+.content {}
+
+.title {
+	font-weight: 700;
+	color: #212529;
+	font-size: 25px;
+	padding: 0px 212px;
+	margin-bottom: 40px;
+	line-height: 1.6;
+}
+
+.text {
+	margin-bottom: 80px;
+	padding: 0px 212px;
+}
+
+.text p {
+	margin-top: 39px;
+}
+
+.img {
+	margin-bottom: 80px;
+}
