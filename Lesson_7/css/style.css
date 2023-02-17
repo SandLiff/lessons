@@ -74,37 +74,37 @@ body {
 	color: #ffffff;
 	margin-bottom: 20px;
 }
-.lists__list-1 li {
+.lists__list-first li {
 	background: url("../img/Lists/Unorder/1.png") 0 3px no-repeat;
 	padding-left: 20px;
 	margin-bottom: 25px;
 	min-height: 20px;
 }
-.lists__list-2 li {
+.lists__list-second li {
 	background: url("../img/Lists/Unorder/2.png") 0 0px no-repeat;
 	padding-left: 30px;
 	margin-bottom: 25px;
 	min-height: 20px;
 }
-.lists__list-3 li {
+.lists__list-third li {
 	background: url("../img/Lists/Unorder/3.png") 0 0px no-repeat;
 	padding-left: 30px;
 	margin-bottom: 25px;
 	min-height: 20px;
 }
-.lists__list-4 li {
+.lists__list-fourth li {
 	background: url("../img/Lists/Unorder/4.png") 0 0px no-repeat;
 	padding-left: 30px;
 	margin-bottom: 25px;
 	min-height: 20px;
 }
-.lists__list-5 li {
+.lists__list-fifth li {
 	background: url("../img/Lists/Unorder/5.png") 0 0px no-repeat;
 	padding-left: 30px;
 	margin-bottom: 25px;
 	min-height: 20px;
 }
-.lists__list-6 li {
+.lists__list-sixth li {
 	background: url("../img/Lists/Unorder/6.png") 0 0px no-repeat;
 	padding-left: 30px;
 	margin-bottom: 25px;
