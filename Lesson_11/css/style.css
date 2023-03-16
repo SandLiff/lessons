@@ -1,0 +1,202 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:500,600");
+
+body {
+	font-weight: 600;
+	color: #212b36;
+	font-family: "Inter", sans-serif;
+	background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header {
+	background-color: #fff;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__logo {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__body {
+}
+.menu__list {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+}
+.menu__item {
+	position: relative;
+
+	padding-top: 41px;
+	padding-bottom: 41px;
+}
+.menu__item:hover .menu-sub__menu {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+.menu__link {
+	display: inline-block;
+}
+.menu__link:hover {
+	color: #3056d3;
+}
+.menu__link_button {
+	background: #f4f7ff;
+	border-radius: 5px;
+	padding: 9px 21px;
+}
+.menu__link_parent {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+}
+.menu__link_parent::after {
+	content: "";
+	width: 11px;
+	height: 6px;
+	background: url("../img/arrow.svg") center / cover no-repeat;
+}
+.menu-sub__menu {
+	padding-top: 5px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s ease 0s;
+}
+.sub-menu__list::before {
+	content: "";
+	position: absolute;
+	bottom: 97%;
+	left: 20px;
+	width: 0;
+	height: 0;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 16px solid rgb(255, 255, 255);
+	border-radius: 2px;
+}
+.sub-menu {
+}
+.sub-menu__list {
+	border: 0.5px solid #e7e7e7;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 21px 22px;
+	min-width: 180px;
+}
+.sub-menu__item {
+	position: relative;
+}
+.sub-menu__item:hover .sub-menu--menu__sub {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 13px;
+}
+.sub-menu__link {
+	color: #637381;
+}
+.sub-menu__link:hover {
+	color: #3056d3;
+}
+.sub-menu__link_parent {
+	display: flex;
+	align-items: center;
+	gap: 67px;
+}
+.sub-menu__link_parent::after {
+	content: "";
+	transform: rotate(-90deg);
+	width: 10px;
+	height: 5px;
+	background: url("../img/arrow.svg") center / cover no-repeat;
+}
+.sub-menu--menu__sub {
+	position: absolute;
+	top: -35px;
+	left: 100%;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s ease 0s;
+}
+.sub-sub__menu {
+}
+.sub-sub__menu_content {
+	display: flex;
+	justify-content: space-between;
+	min-width: 730px;
+	margin-left: 23px;
+	background-color: #fff;
+	border: 0.5px solid #e7e7e7;
+	border-radius: 5px;
+	padding: 30px;
+}
+.sub-sub__menu_list {
+}
+.sub-sub__menu_title {
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.sub-sub__menu_item {
+}
+.sub-sub__menu_item:not(:last-child) {
+	margin-bottom: 12px;
+}
+.sub-sub__menu_link {
+	color: #637381;
+}
+.sub-sub__menu_link:hover {
+	color: #3056d3;
+}
+.sub-sub__menu_image {
+}
+.header__icons {
+	display: flex;
+	gap: 20px;
+}
+.icons {
+}
+.icons__item {
+}
+.icons__link {
+	position: relative;
+}
+.icons__icon {
+}
+.icons__value {
+	display: inline-block;
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	color: #fff;
+	background: #3056d3;
+	border-radius: 100%;
+	padding: 2px 4px;
+	width: 19px;
+	height: 19px;
+	text-align: center;
+}
