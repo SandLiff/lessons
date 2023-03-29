@@ -57,6 +57,7 @@ body {
 .menu-cards__label {
 	font-weight: 500;
 	transition: all 0.3s ease 0s;
+	flex: 1 1 auto;
 	position: relative;
 }
 .menu-cards__label::after {
@@ -94,6 +95,7 @@ body {
 	flex-wrap: wrap;
 	margin: 0 -15.5px;
 	row-gap: 45px;
+	margin-bottom: 60px;
 }
 .cards__column {
 	flex: 0 1 33.333%;
@@ -152,6 +154,23 @@ body {
 	line-height: 1.6;
 }
 .item-cards__author {
+}
+.cards__button {
+	display: inline-block;
+	color: #f8f9fa;
+	background: #212529;
+	border-radius: 3px;
+	font-weight: 500;
+	line-height: 2.8;
+	padding: 7px 50px 8px 49px;
+	align-self: start;
+	margin: 0 auto;
+	transition: all 0.3s ease 0s;
+}
+.cards__button:hover {
+	background-color: #f8f9fa;
+	color: #212529;
+	border: 2px solid #212529;
 }
 
 .footer {
