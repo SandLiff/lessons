@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Дз 17</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="page__main main-block">
+			<div class="main-block__container">
+				<h1 class="main-block__title">Billing Details</h1>
+				<form action="#" method="post" class="main-block__form form-main">
+					<div class="form-main__inner">
+						<div class="form-main__item">
+							<input name="name" required placeholder="First name*" type="text" class="form-main__input" />
+						</div>
+						<div class="form-main__item">
+							<input name="surname" required placeholder="Last name*" type="text" class="form-main__input" />
+						</div>
+					</div>
+					<div class="form-main__inner">
+						<div class="form-main__item">
+							<input name="adress" required placeholder="Address*" type="text" class="form-main__input" />
+						</div>
+						<div class="form-main__item">
+							<input name="adresssecond" placeholder="Address line 2" type="text" class="form-main__input" />
+						</div>
+					</div>
+					<div class="form-main__inner">
+						<div class="form-main__item">
+							<select required name="country" id="country" class="form-main__select">
+								<option selected disabled value="country" class="form-main__option">Country*</option>
+								<option value="usa" class="form-main__option">USA</option>
+								<option value="norway" class="form-main__option">Norway</option>
+								<option value="poland" class="form-main__option">Ploand</option>
+								<option value="ukraine" class="form-main__option">Ukraine</option>
+								<option value="germany" class="form-main__option">Germany</option>
+								<option value="france" class="form-main__option">France</option>
+							</select>
+						</div>
+						<div class="form-main__item">
+							<input name="city" required placeholder="City/Town*" type="text" class="form-main__input" />
+						</div>
+					</div>
+					<div class="form-main__inner">
+						<div class="form-main__item">
+							<input name="postcode" autocomplete="off" required placeholder="Postcode / ZIP*" type="text" class="form-main__input" />
+						</div>
+						<div class="form-main__item">
+							<input name="surname" required autocomplete="off" placeholder="Phone*" type="tel" class="form-main__input" />
+						</div>
+					</div>
+					<div class="form-main__inner">
+						<div class="form-main__item">
+							<input name="postcode" required placeholder="Postcode / ZIP*" type="text" class="form-main__input" />
+						</div>
+						<div class="form-main__item">
+							<input name="surname" required placeholder="Phone*" type="tel" class="form-main__input" />
+						</div>
+					</div>
+					<div class="form-main__inner">
+						<textarea name="information" id="info" class="form-main__textarea" placeholder="Additional information"></textarea>
+					</div>
+					<div class="form-main__inner form-main__inner_checkbox">
+						<div class="form-main__checkbox checkbox">
+							<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+							<label for="c_1" class="checkbox__label">Create Account</label>
+						</div>
+						<div class="form-main__checkbox">
+							<input id="c_2" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+							<label for="c_2" class="checkbox__label">Ship to a different address?</label>
+						</div>
+					</div>
+					<button class="form-main__button" type="submit">Place an Order</button>
+				</form>
+				<form action="#" method="post" class="main-block__cupon cupon-main">
+					<h2 class="cupon-main__title">Apply Coupon to get discount!</h2>
+					<div class="cupon-main__item">
+						<input autocomplete="off" type="text" name="cupon" placeholder="Coupon code" class="cupon-main__input" />
+						<button class="cupon-main__button" type="submit">Apply Code</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="page__design design">
+			<div class="design__container">
+				<h2 class="design__title">ACHIEVEMENT</h2>
+				<div class="design__row">
+					<div class="design__column">
+						<div class="design__item">
+							<div class="design__image">
+								<img src="/img/design/interior.png" alt="interior" />
+							</div>
+							<div class="design__content">
+								<h3 class="design__label">Interior design</h3>
+								<div class="design__text">
+									Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill
+									your expectations.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="design__column">
+						<div class="design__item">
+							<div class="design__image">
+								<img src="/img/design/consultant.png" alt="consultant" />
+							</div>
+							<div class="design__content">
+								<h3 class="design__label">Consultant</h3>
+								<div class="design__text">
+									Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill
+									your expectations.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="design__column">
+						<div class="design__item">
+							<div class="design__image">
+								<img src="/img/design/construction.png" alt="construction" />
+							</div>
+							<div class="design__content">
+								<h3 class="design__label">Construction consultant</h3>
+								<div class="design__text">
+									Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill
+									your expectations.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__minimalist minimalist">
+			<div class="minimalist__container">
+				<div class="minimalist__label">
+					<h1 class="minimalist__title">Minimalist Room</h1>
+					<div class="minimalist__subtitle">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+					</div>
+				</div>
+				<div class="minimalist__image">
+					<img src="img/minimalist/minimalist.png" alt="minimalist" />
+				</div>
+				<div class="minimalist__info info-minimalist">
+					<div class="info-minimalist__item">
+						<h3 class="info-minimalist__title">Project Overview</h3>
+						<div class="info-mininalist__text">
+							<p>
+								Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online
+								learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning
+								with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+							</p>
+						</div>
+						<div class="info-minimalist__info">
+							<div class="info-minimalist__date">July 22 - 2022</div>
+							<div class="info-minimalist__category">Interior Design - Furnitur</div>
+						</div>
+					</div>
+					<div class="info-minimalist__item">
+						<h3 class="info-minimalist__title">Design Process</h3>
+						<div class="info-mininalist__text">
+							<p>
+								Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online
+								learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+							</p>
+							<p>
+								Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online
+								learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="minimalist__images images-minimalist">
+					<div class="images-minimalist__row">
+						<div class="images-minimalist__column">
+							<div class="images-minimalist__item">
+								<img src="img/minimalist/01.png" alt="01" />
+							</div>
+						</div>
+						<div class="images-minimalist__column">
+							<div class="images-minimalist__item">
+								<img src="img/minimalist/02.png" alt="02" />
+							</div>
+						</div>
+						<div class="images-minimalist__column_big">
+							<div class="images-minimalist__item_big">
+								<img src="img/minimalist/03.png" alt="03" />
+							</div>
+						</div>
+						<div class="images-minimalist__column">
+							<div class="images-minimalist__item">
+								<img src="img/minimalist/04.png" alt="04" />
+							</div>
+						</div>
+						<div class="images-minimalist__column">
+							<div class="images-minimalist__item">
+								<img src="img/minimalist/05.png" alt="05" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
