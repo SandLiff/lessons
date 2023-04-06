@@ -240,7 +240,7 @@ body {
 @media (max-width: 618px) {
 	.cupon-main__item {
 		flex-direction: column;
-		gap: 0;
+		row-gap: 4px;
 	}
 }
 .cupon-main__input {
@@ -462,6 +462,11 @@ body {
 	padding: 0 16px;
 	flex: 0 1 50%;
 }
+@media (max-width: 525px) {
+	.images-minimalist__column {
+		flex: 0 1 100%;
+	}
+}
 .images-minimalist__column_big {
 	flex: 1 1 100%;
 	margin: 0 16px;
@@ -469,6 +474,7 @@ body {
 .images-minimalist__item {
 	position: relative;
 	padding-bottom: 87.842466%; /* 513/584 */
+	flex: 0 1 100%;
 }
 .images-minimalist__item img {
 	position: absolute;
