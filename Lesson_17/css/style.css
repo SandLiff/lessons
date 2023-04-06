@@ -380,6 +380,11 @@ body {
 	color: #000000;
 	text-align: center;
 }
+@media (max-width: 600px) {
+	.minimalist__title {
+		font-size: 32px;
+	}
+}
 .minimalist__subtitle {
 	font-size: 18px;
 	line-height: 1.6;
@@ -411,6 +416,7 @@ body {
 	.info-minimalist {
 		flex-direction: column;
 		row-gap: 30px;
+		text-align: center;
 	}
 }
 .info-minimalist__item {
