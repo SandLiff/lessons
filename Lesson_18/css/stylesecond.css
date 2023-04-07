@@ -254,17 +254,20 @@
 	transform: rotate(-180deg) scale(1.2);
 }
 
-.menu-topics__search {
-	background: url("../img/icons/search.svg") left no-repeat;
-	padding-left: 20px;
-	color: rgba(73, 80, 87, 0.5);
-	font-weight: 500;
-	line-height: 2.08;
-	transition: all 0.3s;
+.menu-topics__form {
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
-.menu-topics__search:hover {
-	color: rgba(73, 80, 87, 1);
-	transform: scale(1.02);
+.form-topics {
+}
+.form-topics__button {
+}
+.form-topics__input {
+	outline: 1px #000000 solid;
+	width: 250px;
+	height: 20px;
+	padding: 15px;
 }
 .topics__content {
 	flex: 0 0 61.089494%;
