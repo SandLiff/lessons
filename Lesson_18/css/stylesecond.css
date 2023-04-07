@@ -421,4 +421,9 @@
 		text-align: center;
 		padding-left: 0;
 	}
+	.pages-topics__list {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
 }
