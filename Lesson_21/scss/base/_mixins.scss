@@ -1,0 +1,105 @@
+@mixin mediaFlexHalf($breakpoint) {
+	@media (max-width: $breakpoint) {
+		flex: 0 1 50%;
+	}
+}
+
+@mixin mediaFlexOne($breakpoint) {
+	@media (max-width: $breakpoint) {
+		flex: 0 1 100%;
+	}
+}
+
+@mixin flex($flexDirection, $flexJustify, $flexItems) {
+	display: flex;
+	flex-direction: $flexDirection;
+	flex-wrap: wrap;
+	justify-content: $flexJustify;
+	align-items: $flexItems;
+}
+
+@mixin imageResponisveImg() {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@mixin imageResponsiveImage($paddingImage) {
+	position: relative;
+	padding-bottom: $paddingImage;
+}
+
+@mixin fontSettins($fontFamily, $fontSize, $fontLine, $fontColor) {
+	font-family: "#{$fontFamily}", sans-serif;
+	font-size: $fontSize;
+	line-height: $fontLine;
+	color: $fontColor;
+}
+
+@mixin grid($rows, $rowsSize, $columns, $columnsSize, $gridFlow) {
+	display: grid;
+	grid-template: repeat($rows, $rowsSize) / repeat($columns, $columnsSize);
+	grid-auto-flow: $gridFlow;
+}
+
+@mixin imageResponsiveBg($paddingBg) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: $paddingBg;
+}
+
+@mixin burger($burgerIconColor) {
+	display: none;
+	@media (max-width: 47.99875em) {
+		display: block;
+		position: relative;
+		width: 1.875rem;
+		height: 1.125rem;
+		z-index: 5;
+		@media (any-hover: none) {
+			cursor: default;
+		}
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: 0.125rem;
+			background-color: $burgerIconColor;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - 0.0625rem);
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - 0.0625rem);
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - 0.0625rem);
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
